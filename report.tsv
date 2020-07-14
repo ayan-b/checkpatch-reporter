@@ -1,0 +1,106 @@
+Commit Hash	Severity	Type	Filename	Line Number	Error Message
+ea91a1d45d19469001a4955583187b0d75915759	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	28	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+0e1aa5b62160500bb2ed3150367fba83c0a194e5	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	24	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+75d75b7a4d5489cc6a5e91ace306f6c13f376f33	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	11	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+75d75b7a4d5489cc6a5e91ace306f6c13f376f33	WARNING	EXPORT_SYMBOL	kernel/kcsan/core.c	810	EXPORT_SYMBOL(foo); should immediately follow its function/variable
+75d75b7a4d5489cc6a5e91ace306f6c13f376f33	WARNING	EXPORT_SYMBOL	kernel/kcsan/core.c	813	EXPORT_SYMBOL(foo); should immediately follow its function/variable
+75d75b7a4d5489cc6a5e91ace306f6c13f376f33	WARNING	EXPORT_SYMBOL	kernel/kcsan/core.c	824	EXPORT_SYMBOL(foo); should immediately follow its function/variable
+d31d4d6bb256c3e784709e4aaf075de87c3390fc	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	15	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+e3b779d9ebe82b4be0121f25f27632844bb86d96	ERROR	COMPLEX_MACRO	include/linux/compiler.h	334	Macros with complex values should be enclosed in parentheses
+eb73876c74313231c35cee6310f8ad62c56fa2b3	ERROR	COMPLEX_MACRO	include/linux/compiler_types.h	181	Macros with complex values should be enclosed in parentheses
+eb73876c74313231c35cee6310f8ad62c56fa2b3	ERROR	COMPLEX_MACRO	include/linux/compiler_types.h	193	Macros with complex values should be enclosed in parentheses
+4e018b450ad34b0edc865e91ec5e957d677e2c4e	WARNING	NO_AUTHOR_SIGN_OFF	mm/memory-failure.c	434	Missing Signed-off-by: line by nominal patch author 'Naoya Horiguchi <nao.horiguchi@gmail.com>'
+03151c6e0b66c63c3e9980edf78c3a7a99801764	WARNING	NO_AUTHOR_SIGN_OFF	mm/memory-failure.c	442	Missing Signed-off-by: line by nominal patch author 'Naoya Horiguchi <nao.horiguchi@gmail.com>'
+fce1affe4e39b9ca8346bdbb5171e60ac303c355	ERROR	GIT_COMMIT_ID	COMMIT_MESSAGE	1	Please use git commit description style 'commit <12+ chars of sha1> ("<title line>")' - ie: 'commit c488aeadcbd0 ("tcp: add tcp_sock_set_user_timeout")'
+fce1affe4e39b9ca8346bdbb5171e60ac303c355	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	5	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+b1bc1874b885683df5da9d9548ca66dfc0e407f2	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	182	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+71ed49d8fb33023f242419a77ecb1141c029cac4	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	480	Non-standard signature: Debugged-by:
+d313852d7ad044476df7f640801aac17080e0521	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	702	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+e4bd7c4a8d2a8471d821dd29919378d1b8567091	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	397	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+975221eca5fbfdb4b6b1d17c9e540d4d7627ce18	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	2821	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+0bf3924bfabd13ba21aa702344fc00b3b3263e5a	WARNING	TYPO_SPELLING	arch/x86/entry/common.c	564	'Interupts' may be misspelled - perhaps 'Interrupts'?
+0bf3924bfabd13ba21aa702344fc00b3b3263e5a	WARNING	TYPO_SPELLING	arch/x86/entry/common.c	574	'interupt' may be misspelled - perhaps 'interrupt'?
+a7a519a4926214ba4161bc30109f4a8d69defb8d	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	2338	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+a7a519a4926214ba4161bc30109f4a8d69defb8d	WARNING	LONG_LINE	fs/cifs/smb2pdu.c	2341	line length of 110 exceeds 100 columns
+22eb78792e07a4dfb63c85f34950d4e58eb90326	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	257	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+caf62492f479585296e9d636c798d5ac256b7b04	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	46	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+caf62492f479585296e9d636c798d5ac256b7b04	ERROR	GLOBAL_INITIALISERS	tools/testing/selftests/bpf/progs/test_skeleton.c	23	do not initialise globals to 0
+caf62492f479585296e9d636c798d5ac256b7b04	WARNING	VOLATILE	tools/testing/selftests/bpf/progs/test_skeleton.c	23	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+caf62492f479585296e9d636c798d5ac256b7b04	ERROR	GLOBAL_INITIALISERS	tools/testing/selftests/bpf/progs/test_skeleton.c	32	do not initialise globals to 0
+5f14596e55de458987ee38043019b3d5cd636af1	WARNING	LEADING_SPACE	arch/alpha/boot/tools/objstrip.c	151	please, no spaces at the start of a line
+54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	GIT_COMMIT_ID	COMMIT_MESSAGE	222	Please use git commit description style 'commit <12+ chars of sha1> ("<title line>")' - ie: 'commit cd0e00c10672 ("alpha: io: reorder barriers to guarantee writeX() and iowriteX() ordering")'
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	313	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	313	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/include/asm/io.h	314	space required after that ',' (ctx:VxV)
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	322	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	322	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/include/asm/io.h	323	space required after that ',' (ctx:VxV)
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	365	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	365	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/include/asm/io.h	366	space required after that ',' (ctx:VxV)
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	412	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	412	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	421	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	421	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	464	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	464	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	473	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	473	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	504	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	505	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	506	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	507	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/include/asm/io.h	509	space required after that ',' (ctx:VxV)
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	510	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	512	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	516	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	518	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/include/asm/io.h	523	space required after that ',' (ctx:VxV)
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	524	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	526	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	530	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	532	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	20	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	20	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/kernel/io.c	21	space required after that ',' (ctx:VxV)
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	29	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	29	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/kernel/io.c	30	space required after that ',' (ctx:VxV)
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	38	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	38	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/kernel/io.c	39	space required after that ',' (ctx:VxV)
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	158	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	158	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	167	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	167	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	176	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	176	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	185	Missing a blank line after declarations
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	185	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/kernel/io.c	228	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	230	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/kernel/io.c	234	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	236	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/kernel/io.c	240	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	242	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/kernel/io.c	246	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	248	memory barrier without comment
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	EXPORT_SYMBOL	arch/alpha/kernel/io.c	252	EXPORT_SYMBOL(foo); should immediately follow its function/variable
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	EXPORT_SYMBOL	arch/alpha/kernel/io.c	253	EXPORT_SYMBOL(foo); should immediately follow its function/variable
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	EXPORT_SYMBOL	arch/alpha/kernel/io.c	254	EXPORT_SYMBOL(foo); should immediately follow its function/variable
+54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	EXPORT_SYMBOL	arch/alpha/kernel/io.c	255	EXPORT_SYMBOL(foo); should immediately follow its function/variable
+7812193ca88bcb6c7bddea61c8797e2d5a6df5bd	WARNING	COMMIT_MESSAGE	COMMIT_MESSAGE	1420	Missing commit description - Add an appropriate one
+a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	16	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/net/ethernet/8390/Kconfig	92	drivers/net/ethernet/8390/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
+a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/net/ethernet/8390/Kconfig	93	drivers/net/ethernet/8390/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
+a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/net/wireless/intersil/hostap/Kconfig	29	drivers/net/wireless/intersil/hostap/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
+a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/net/wireless/intersil/hostap/Kconfig	30	drivers/net/wireless/intersil/hostap/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
+a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/sfi/Kconfig	132	drivers/sfi/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
+a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/sfi/Kconfig	133	drivers/sfi/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
+298ce0fd50309a4805413f9572280606e4007cbe	WARNING	FILE_PATH_CHANGES	samples/watch_queue/.gitignore	6	added, moved or deleted file(s), does MAINTAINERS need updating?
+4f9b3a377549e2b585f5e1910c247913b49e6c83	WARNING	FILE_PATH_CHANGES	samples/binderfs/.gitignore	6	added, moved or deleted file(s), does MAINTAINERS need updating?
+39030e1351aa1aa7443bb2da24426573077c83da	ERROR	POINTER_LOCATION	include/linux/lsm_hook_defs.h	193	"foo * bar" should be "foo *bar"
+39030e1351aa1aa7443bb2da24426573077c83da	ERROR	SPACING	kernel/sys.c	877	space required after that ',' (ctx:VxV)
+39030e1351aa1aa7443bb2da24426573077c83da	ERROR	SPACING	kernel/sys.c	877	space required after that ',' (ctx:VxV)
+b3a9e3b9622ae10064826dccb4f7a52bd88c7407	WARNING	COMMIT_MESSAGE	COMMIT_MESSAGE	2	Missing commit description - Add an appropriate one
+b3a9e3b9622ae10064826dccb4f7a52bd88c7407	ERROR	MISSING_SIGN_OFF	Makefile	9	Missing Signed-off-by: line(s)
