@@ -31,7 +31,6 @@ d175d699df07041befda3779f29bf7126c298730	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	317
 625412c210fb6423e40cb22de7d14fc3bb9d9e79	WARNING	CONFIG_DESCRIPTION	arch/arm64/Kconfig	1300	please write a paragraph that describes the config symbol fully
 a194c33f45f83068ef13bf1d16e26d4ca3ecc098	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	33	Possible unwrapped commit description (prefer a maximum 75 chars per line)
 32022fd97ed34f6812802bf1288db27c313576f4	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	1277	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-47f6bc4ce1ff70d7ba0924c2f1c218c96cd585fb	ERROR	GIT_COMMIT_ID	COMMIT_MESSAGE	4	Please use git commit description style 'commit <12+ chars of sha1> ("<title line>")' - ie: 'commit 9e88b9312acb ("tools: bpftool: do not force gcc as CC")'
 3204be4109ad681523e3461ce64454c79278450a	ERROR	SPACING	arch/arm64/include/asm/kvm_host.h	409	space required after that ',' (ctx:VxV)
 3204be4109ad681523e3461ce64454c79278450a	ERROR	SPACING	arch/arm64/include/asm/kvm_host.h	410	space required after that ',' (ctx:VxV)
 0370964dd3ff7d3d406f292cb443a927952cbd05	WARNING	TYPO_SPELLING	COMMIT_MESSAGE	218	'syncronized' may be misspelled - perhaps 'synchronized'?
