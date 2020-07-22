@@ -1,106 +1,705 @@
 Commit Hash	Severity	Type	Filename	Line Number	Error Message
-ea91a1d45d19469001a4955583187b0d75915759	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	28	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-0e1aa5b62160500bb2ed3150367fba83c0a194e5	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	24	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-75d75b7a4d5489cc6a5e91ace306f6c13f376f33	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	11	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-75d75b7a4d5489cc6a5e91ace306f6c13f376f33	WARNING	EXPORT_SYMBOL	kernel/kcsan/core.c	810	EXPORT_SYMBOL(foo); should immediately follow its function/variable
-75d75b7a4d5489cc6a5e91ace306f6c13f376f33	WARNING	EXPORT_SYMBOL	kernel/kcsan/core.c	813	EXPORT_SYMBOL(foo); should immediately follow its function/variable
-75d75b7a4d5489cc6a5e91ace306f6c13f376f33	WARNING	EXPORT_SYMBOL	kernel/kcsan/core.c	824	EXPORT_SYMBOL(foo); should immediately follow its function/variable
-d31d4d6bb256c3e784709e4aaf075de87c3390fc	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	15	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-e3b779d9ebe82b4be0121f25f27632844bb86d96	ERROR	COMPLEX_MACRO	include/linux/compiler.h	334	Macros with complex values should be enclosed in parentheses
-eb73876c74313231c35cee6310f8ad62c56fa2b3	ERROR	COMPLEX_MACRO	include/linux/compiler_types.h	181	Macros with complex values should be enclosed in parentheses
-eb73876c74313231c35cee6310f8ad62c56fa2b3	ERROR	COMPLEX_MACRO	include/linux/compiler_types.h	193	Macros with complex values should be enclosed in parentheses
-4e018b450ad34b0edc865e91ec5e957d677e2c4e	WARNING	NO_AUTHOR_SIGN_OFF	mm/memory-failure.c	434	Missing Signed-off-by: line by nominal patch author 'Naoya Horiguchi <nao.horiguchi@gmail.com>'
-03151c6e0b66c63c3e9980edf78c3a7a99801764	WARNING	NO_AUTHOR_SIGN_OFF	mm/memory-failure.c	442	Missing Signed-off-by: line by nominal patch author 'Naoya Horiguchi <nao.horiguchi@gmail.com>'
-fce1affe4e39b9ca8346bdbb5171e60ac303c355	ERROR	GIT_COMMIT_ID	COMMIT_MESSAGE	1	Please use git commit description style 'commit <12+ chars of sha1> ("<title line>")' - ie: 'commit c488aeadcbd0 ("tcp: add tcp_sock_set_user_timeout")'
-fce1affe4e39b9ca8346bdbb5171e60ac303c355	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	5	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-b1bc1874b885683df5da9d9548ca66dfc0e407f2	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	182	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-71ed49d8fb33023f242419a77ecb1141c029cac4	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	480	Non-standard signature: Debugged-by:
-d313852d7ad044476df7f640801aac17080e0521	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	702	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-e4bd7c4a8d2a8471d821dd29919378d1b8567091	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	397	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-975221eca5fbfdb4b6b1d17c9e540d4d7627ce18	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	2821	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-0bf3924bfabd13ba21aa702344fc00b3b3263e5a	WARNING	TYPO_SPELLING	arch/x86/entry/common.c	564	'Interupts' may be misspelled - perhaps 'Interrupts'?
-0bf3924bfabd13ba21aa702344fc00b3b3263e5a	WARNING	TYPO_SPELLING	arch/x86/entry/common.c	574	'interupt' may be misspelled - perhaps 'interrupt'?
-a7a519a4926214ba4161bc30109f4a8d69defb8d	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	2338	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-a7a519a4926214ba4161bc30109f4a8d69defb8d	WARNING	LONG_LINE	fs/cifs/smb2pdu.c	2341	line length of 110 exceeds 100 columns
-22eb78792e07a4dfb63c85f34950d4e58eb90326	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	257	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-caf62492f479585296e9d636c798d5ac256b7b04	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	46	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-caf62492f479585296e9d636c798d5ac256b7b04	ERROR	GLOBAL_INITIALISERS	tools/testing/selftests/bpf/progs/test_skeleton.c	23	do not initialise globals to 0
-caf62492f479585296e9d636c798d5ac256b7b04	WARNING	VOLATILE	tools/testing/selftests/bpf/progs/test_skeleton.c	23	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-caf62492f479585296e9d636c798d5ac256b7b04	ERROR	GLOBAL_INITIALISERS	tools/testing/selftests/bpf/progs/test_skeleton.c	32	do not initialise globals to 0
-5f14596e55de458987ee38043019b3d5cd636af1	WARNING	LEADING_SPACE	arch/alpha/boot/tools/objstrip.c	151	please, no spaces at the start of a line
-54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	GIT_COMMIT_ID	COMMIT_MESSAGE	222	Please use git commit description style 'commit <12+ chars of sha1> ("<title line>")' - ie: 'commit cd0e00c10672 ("alpha: io: reorder barriers to guarantee writeX() and iowriteX() ordering")'
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	313	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	313	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/include/asm/io.h	314	space required after that ',' (ctx:VxV)
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	322	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	322	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/include/asm/io.h	323	space required after that ',' (ctx:VxV)
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	365	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	365	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/include/asm/io.h	366	space required after that ',' (ctx:VxV)
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	412	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	412	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	421	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	421	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	464	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	464	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/include/asm/io.h	473	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	473	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	504	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	505	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	506	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	507	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/include/asm/io.h	509	space required after that ',' (ctx:VxV)
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	510	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	512	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	516	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	518	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/include/asm/io.h	523	space required after that ',' (ctx:VxV)
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	524	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	526	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/include/asm/io.h	530	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/include/asm/io.h	532	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	20	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	20	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/kernel/io.c	21	space required after that ',' (ctx:VxV)
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	29	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	29	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/kernel/io.c	30	space required after that ',' (ctx:VxV)
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	38	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	38	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	ERROR	SPACING	arch/alpha/kernel/io.c	39	space required after that ',' (ctx:VxV)
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	158	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	158	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	167	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	167	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	176	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	176	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	LINE_SPACING	arch/alpha/kernel/io.c	185	Missing a blank line after declarations
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	185	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/kernel/io.c	228	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	230	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/kernel/io.c	234	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	236	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/kernel/io.c	240	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	242	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	VOLATILE	arch/alpha/kernel/io.c	246	Use of volatile is usually wrong: see Documentation/process/volatile-considered-harmful.rst
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	MEMORY_BARRIER	arch/alpha/kernel/io.c	248	memory barrier without comment
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	EXPORT_SYMBOL	arch/alpha/kernel/io.c	252	EXPORT_SYMBOL(foo); should immediately follow its function/variable
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	EXPORT_SYMBOL	arch/alpha/kernel/io.c	253	EXPORT_SYMBOL(foo); should immediately follow its function/variable
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	EXPORT_SYMBOL	arch/alpha/kernel/io.c	254	EXPORT_SYMBOL(foo); should immediately follow its function/variable
-54505a1e2083fc54cbe8779b97479f969cd30a00	WARNING	EXPORT_SYMBOL	arch/alpha/kernel/io.c	255	EXPORT_SYMBOL(foo); should immediately follow its function/variable
-7812193ca88bcb6c7bddea61c8797e2d5a6df5bd	WARNING	COMMIT_MESSAGE	COMMIT_MESSAGE	1420	Missing commit description - Add an appropriate one
-a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	16	Possible unwrapped commit description (prefer a maximum 75 chars per line)
-a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/net/ethernet/8390/Kconfig	92	drivers/net/ethernet/8390/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
-a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/net/ethernet/8390/Kconfig	93	drivers/net/ethernet/8390/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
-a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/net/wireless/intersil/hostap/Kconfig	29	drivers/net/wireless/intersil/hostap/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
-a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/net/wireless/intersil/hostap/Kconfig	30	drivers/net/wireless/intersil/hostap/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
-a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/sfi/Kconfig	132	drivers/sfi/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
-a7f7f6248d9740d710fd6bd190293fe5e16410ac	WARNING	OBSOLETE	drivers/sfi/Kconfig	133	drivers/sfi/Kconfig is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
-298ce0fd50309a4805413f9572280606e4007cbe	WARNING	FILE_PATH_CHANGES	samples/watch_queue/.gitignore	6	added, moved or deleted file(s), does MAINTAINERS need updating?
-4f9b3a377549e2b585f5e1910c247913b49e6c83	WARNING	FILE_PATH_CHANGES	samples/binderfs/.gitignore	6	added, moved or deleted file(s), does MAINTAINERS need updating?
-39030e1351aa1aa7443bb2da24426573077c83da	ERROR	POINTER_LOCATION	include/linux/lsm_hook_defs.h	193	"foo * bar" should be "foo *bar"
-39030e1351aa1aa7443bb2da24426573077c83da	ERROR	SPACING	kernel/sys.c	877	space required after that ',' (ctx:VxV)
-39030e1351aa1aa7443bb2da24426573077c83da	ERROR	SPACING	kernel/sys.c	877	space required after that ',' (ctx:VxV)
-b3a9e3b9622ae10064826dccb4f7a52bd88c7407	WARNING	COMMIT_MESSAGE	COMMIT_MESSAGE	2	Missing commit description - Add an appropriate one
-b3a9e3b9622ae10064826dccb4f7a52bd88c7407	ERROR	MISSING_SIGN_OFF	Makefile	9	Missing Signed-off-by: line(s)
+4f6de12b375c37ba51f9412be7ed6ab44a7f71d8	WARNING	LEADING_SPACE	mm/maccess.c	47	please, no spaces at the start of a line
+9de1fec50b23117f0a19f7609cc837ca72e764a6	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	1294	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+98a23609b10364a51a1bb3688f8dd1cd1aa94a9a	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	154	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+b58294ead14cde8081853487929adca821ed630d	ERROR	COMPLEX_MACRO	mm/maccess.c	16	Macros with complex values should be enclosed in parentheses
+b58294ead14cde8081853487929adca821ed630d	ERROR	COMPLEX_MACRO	mm/maccess.c	42	Macros with complex values should be enclosed in parentheses
+fa94111d94354de76c47fea6e1187d1ee91e23a7	WARNING	MACRO_WITH_FLOW_CONTROL	arch/x86/include/asm/uaccess.h	528	Macros with flow control statements should be avoided
+f4c48b44080e18d86d7983c1a60ee5a7f9d07e3e	WARNING	BRACES	fs/btrfs/inode.c	7899	braces {} are not necessary for single statement blocks
+8e0fa5d7b3df6e7e23e13a7250b00afe32d4e618	WARNING	MEMORY_BARRIER	fs/btrfs/btrfs_inode.h	324	memory barrier without comment
+8e0fa5d7b3df6e7e23e13a7250b00afe32d4e618	WARNING	MEMORY_BARRIER	fs/btrfs/btrfs_inode.h	329	memory barrier without comment
+3beff76b54986fc3132fb62614875f116bba7701	ERROR	COMPLEX_MACRO	arch/x86/include/asm/uaccess.h	507	Macros with complex values should be enclosed in parentheses
+3beff76b54986fc3132fb62614875f116bba7701	ERROR	SPACING	arch/x86/include/asm/uaccess.h	509	space required after that ',' (ctx:VxV)
+3beff76b54986fc3132fb62614875f116bba7701	ERROR	SPACING	arch/x86/include/asm/uaccess.h	509	space required after that ',' (ctx:VxV)
+75e68e5bf2c7fa9d3e874099139df03d5952a3e1	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	1028	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+21a85bd601ee50f2796d52c542c46d04e21cedac	WARNING	LONG_LINE_STRING	scripts/link-vmlinux.sh	147	line length of 107 exceeds 100 columns
+248e00ac47d64e153b9c50f45aad73cd61894a73	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	232	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+281920b7e0b31e0a7706433ff58e7d52ac97c327	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	692	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+845e0ebb4408d4473cf60d21224a897037e9a77a	WARNING	OBSOLETE	drivers/net/wireless/intersil/hostap/hostap_hw.c	4252	drivers/net/wireless/intersil/hostap/hostap_hw.c is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
+845e0ebb4408d4473cf60d21224a897037e9a77a	WARNING	OBSOLETE	drivers/net/wireless/intersil/hostap/hostap_hw.c	4253	drivers/net/wireless/intersil/hostap/hostap_hw.c is marked as 'obsolete' in the MAINTAINERS hierarchy.  No unnecessary modifications please.
+865a6cbb2288f8af7f9dc3b153c61b7014fdcf1e	WARNING	NO_AUTHOR_SIGN_OFF	tools/testing/selftests/net/rxtimestamp.c	122	Missing Signed-off-by: line by nominal patch author 'tannerlove <tannerlove@google.com>'
+8ca8d4a841730c02e77bf3c87bf658cc44f364b9	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	13	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+8ca8d4a841730c02e77bf3c87bf658cc44f364b9	WARNING	NO_AUTHOR_SIGN_OFF	tools/lib/bpf/hashmap.h	19	Missing Signed-off-by: line by nominal patch author 'Arnaldo Carvalho de Melo <acme@kernel.org>'
+f98c2ddf8ba34d8c44bf81f2e7542166d90ce5d9	WARNING	FUNCTION_ARGUMENTS	include/target/target_core_fabric.h	155	function definition argument 'struct se_cmd *' should also have an identifier name
+f98c2ddf8ba34d8c44bf81f2e7542166d90ce5d9	WARNING	FUNCTION_ARGUMENTS	include/target/target_core_fabric.h	155	function definition argument 'unsigned char *' should also have an identifier name
+a36840d8002736060f96386cf5dd148f0b0d4fa3	WARNING	FUNCTION_ARGUMENTS	include/target/target_core_fabric.h	154	function definition argument 'struct se_cmd *' should also have an identifier name
+a36840d8002736060f96386cf5dd148f0b0d4fa3	WARNING	FUNCTION_ARGUMENTS	include/target/target_core_fabric.h	191	function definition argument 'struct se_cmd *' should also have an identifier name
+987db58737e26c3d995811fefef9632756ca7cec	WARNING	FUNCTION_ARGUMENTS	include/target/target_core_fabric.h	156	function definition argument 'struct se_cmd *' should also have an identifier name
+d175d699df07041befda3779f29bf7126c298730	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	317	Duplicate signature
+6b7ce8927b5a4d739670d4dc0de301f2abfd9a5c	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	105	Co-developed-by and Signed-off-by: name/email do not match
+6b7ce8927b5a4d739670d4dc0de301f2abfd9a5c	WARNING	FILE_PATH_CHANGES	drivers/irqchip/irq-riscv-intc.c	104	added, moved or deleted file(s), does MAINTAINERS need updating?
+625412c210fb6423e40cb22de7d14fc3bb9d9e79	WARNING	CONFIG_DESCRIPTION	arch/arm64/Kconfig	1300	please write a paragraph that describes the config symbol fully
+a194c33f45f83068ef13bf1d16e26d4ca3ecc098	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	33	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+32022fd97ed34f6812802bf1288db27c313576f4	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	1277	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+47f6bc4ce1ff70d7ba0924c2f1c218c96cd585fb	ERROR	GIT_COMMIT_ID	COMMIT_MESSAGE	3	Please use git commit description style 'commit <12+ chars of sha1> ("<title line>")' - ie: 'commit 7ed1c1901fe5 ("tools: fix cross-compile var clobbering")'
+47f6bc4ce1ff70d7ba0924c2f1c218c96cd585fb	ERROR	GIT_COMMIT_ID	COMMIT_MESSAGE	4	Please use git commit description style 'commit <12+ chars of sha1> ("<title line>")' - ie: 'commit 9e88b9312acb ("tools: bpftool: do not force gcc as CC")'
+3204be4109ad681523e3461ce64454c79278450a	ERROR	SPACING	arch/arm64/include/asm/kvm_host.h	409	space required after that ',' (ctx:VxV)
+3204be4109ad681523e3461ce64454c79278450a	ERROR	SPACING	arch/arm64/include/asm/kvm_host.h	410	space required after that ',' (ctx:VxV)
+0370964dd3ff7d3d406f292cb443a927952cbd05	WARNING	TYPO_SPELLING	COMMIT_MESSAGE	218	'syncronized' may be misspelled - perhaps 'synchronized'?
+cb301414763e07e4cef58c9d5ef3750d1f9539bc	WARNING	MAINTAINERS_STYLE	MAINTAINERS	2145	Misordered MAINTAINERS entry - list file patterns in alphabetic order
+8c46fa96822c28ca81036e26c2d963f1fac9a961	ERROR	CODE_INDENT	drivers/cdrom/cdrom.c	3521	code indent should use tabs where possible
+8c46fa96822c28ca81036e26c2d963f1fac9a961	WARNING	LEADING_SPACE	drivers/cdrom/cdrom.c	3521	please, no spaces at the start of a line
+ce9ac056d9cd15630dfca352ff6d3051ba3ba8f6	WARNING	UNNECESSARY_ELSE	include/net/nexthop.h	146	else is not generally useful after a break or return
+7cdaf587de7c6f494b8433fded19f7728e70e1ef	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	5838	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+ae0b829df7120c78692e49c88453007e531c0e00	WARNING	FILE_PATH_CHANGES	Documentation/networking/devlink-params-sja1105.txt	9	added, moved or deleted file(s), does MAINTAINERS need updating?
+9f267a17bfb4eb52a1705d0886a7220e6470bf52	WARNING	UNKNOWN_COMMIT_ID	COMMIT_MESSAGE	504	Unknown commit id 'e7b592f6caca', maybe rebased or not pulled?
+405906600a33a37e225817c085b1807ad46784b4	WARNING	TYPO_SPELLING	scripts/spelling.txt	62	'acutally' may be misspelled - perhaps 'actually'?
+405906600a33a37e225817c085b1807ad46784b4	WARNING	TYPO_SPELLING	scripts/spelling.txt	253	'callser' may be misspelled - perhaps 'caller'?
+405906600a33a37e225817c085b1807ad46784b4	WARNING	TYPO_SPELLING	scripts/spelling.txt	676	'havind' may be misspelled - perhaps 'having'?
+405906600a33a37e225817c085b1807ad46784b4	WARNING	TYPO_SPELLING	scripts/spelling.txt	851	'maangement' may be misspelled - perhaps 'management'?
+405906600a33a37e225817c085b1807ad46784b4	WARNING	TYPO_SPELLING	scripts/spelling.txt	912	'monitring' may be misspelled - perhaps 'monitoring'?
+405906600a33a37e225817c085b1807ad46784b4	WARNING	TYPO_SPELLING	scripts/spelling.txt	1018	'pattrns' may be misspelled - perhaps 'patterns'?
+405906600a33a37e225817c085b1807ad46784b4	WARNING	TYPO_SPELLING	scripts/spelling.txt	1265	'significanly' may be misspelled - perhaps 'significantly'?
+405906600a33a37e225817c085b1807ad46784b4	WARNING	TYPO_SPELLING	scripts/spelling.txt	1381	'threee' may be misspelled - perhaps 'three'?
+405906600a33a37e225817c085b1807ad46784b4	WARNING	TYPO_SPELLING	scripts/spelling.txt	1421	'usccess' may be misspelled - perhaps 'success'?
+e8ec04938c446e5f4dc53e0147f0f679995012ee	WARNING	NO_AUTHOR_SIGN_OFF	lib/lz4/lz4_decompress.c	150	Missing Signed-off-by: line by nominal patch author 'Joe Perches <joe@perches.com>'
+2581ac7c2f6b093eea3340a4e2db8a55fc9f8470	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	6390	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+81c4f4d924d5d009b5ed785a3e22b18d0f7b831f	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	752	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+9bf5b9eb232b34738800868e30bea3bad4a6a1ba	WARNING	FILE_PATH_CHANGES	mm/mmu_context.c	47	added, moved or deleted file(s), does MAINTAINERS need updating?
+f5678e7f2ac31c270334b936352f0ef2fe7dd2b3	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	26	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+ad5d1122b82fbd6a816d1b9d26ee01a6dbc2d757	WARNING	FILE_PATH_CHANGES	arch/riscv/include/asm/clocksource.h	62	added, moved or deleted file(s), does MAINTAINERS need updating?
+e9f901dc05c09c4f89183cadcb2d93177f3100cb	WARNING	UNDOCUMENTED_DT_STRING	drivers/mailbox/qcom-apcs-ipc-mailbox.c	146	DT compatible string "qcom,ipq6018-apcs-apps-global" appears un-documented -- check ./Documentation/devicetree/bindings/
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	FILE_PATH_CHANGES	include/linux/atomic-arch-fallback.h	254	added, moved or deleted file(s), does MAINTAINERS need updating?
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	SPDX_LICENSE_TAG	include/linux/atomic-arch-fallback.h	1	Improper SPDX comment style for 'include/linux/atomic-arch-fallback.h', please use '/*' instead
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	SPDX_LICENSE_TAG	include/linux/atomic-arch-fallback.h	1	Missing or malformed SPDX-License-Identifier tag in line 1
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	MEMORY_BARRIER	include/linux/atomic-arch-fallback.h	84	memory barrier without comment
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	MEMORY_BARRIER	include/linux/atomic-arch-fallback.h	93	memory barrier without comment
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	109	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	130	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	151	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	172	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	193	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	214	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	235	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	256	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	325	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	346	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	406	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	427	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	496	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	517	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	577	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	598	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	619	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	640	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	709	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	730	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	751	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	772	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	793	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	814	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	835	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	856	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	877	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	898	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	920	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	933	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	946	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	959	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	974	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	995	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	MEMORY_BARRIER	include/linux/atomic-arch-fallback.h	1191	memory barrier without comment
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	MEMORY_BARRIER	include/linux/atomic-arch-fallback.h	1200	memory barrier without comment
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1216	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1237	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1258	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1279	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1300	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1321	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1342	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1363	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1432	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1453	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1513	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1534	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1603	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1624	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1684	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1705	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1726	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1747	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1816	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1837	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1858	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1879	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1900	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1921	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1942	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1963	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	1984	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	2005	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	2027	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	2040	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	2053	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	2066	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	2081	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	LINE_SPACING	include/linux/atomic-arch-fallback.h	2102	Missing a blank line after declarations
+37f8173dd84936ea78000ed1cad24f8b18d48ebb	WARNING	SPDX_LICENSE_TAG	scripts/atomic/gen-atomic-fallback.sh	2	Misplaced SPDX-License-Identifier tag - use line 1 instead
+dd4bc60765873445893037ae73a5f75398a8cd19	WARNING	SUSPECT_CODE_INDENT	arch/arm64/kernel/setup.c	323	suspect code indent for conditional statements (8, 13)
+26fa1263b0ba35f01a25f4f7e70ba7c44455d1e3	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	798	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+26fa1263b0ba35f01a25f4f7e70ba7c44455d1e3	ERROR	GIT_COMMIT_ID	COMMIT_MESSAGE	798	Please use git commit description style 'commit <12+ chars of sha1> ("<title line>")' - ie: 'commit 52aec3308db8 ("x86/tlb: replace INVALIDATE_TLB_VECTOR by CALL_FUNCTION_VECTOR")'
+24ae0c91cbc57c2deb0401bd653453a508acdcee	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	228	Co-developed-by and Signed-off-by: name/email do not match
+0372007f5a79d61d3cb48a507717b9afb5d6addd	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	172	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+126f21f0e8d46e2c0e9daafb67546dbfb316d325	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	58	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+8f159f1dfa1ea29d70a84335fe6a8bd501a9eecd	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	428	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+ca4c6a9858c23b4f330113f391f2eadc983e780f	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	1388	Non-standard signature: Originally-by:
+877f183f83cc33b1b09313b9c18ab7ee5abda44f	WARNING	FILE_PATH_CHANGES	arch/x86/include/asm/trapnr.h	129	added, moved or deleted file(s), does MAINTAINERS need updating?
+67f1386616dc0c70f30f214245521c582666edac	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1026	line length of 108 exceeds 100 columns
+67f1386616dc0c70f30f214245521c582666edac	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1045	line length of 133 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1061	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1062	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1063	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1064	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1065	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1066	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1067	line length of 120 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1068	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1069	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1070	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1071	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1072	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1073	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1074	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1075	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1077	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1086	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1087	line length of 112 exceeds 100 columns
+cfa82a00533f7074011a3a49fbb6ed1b1f6fa010	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	1088	line length of 112 exceeds 100 columns
+53aaf262c66ee237e4163f1af347939ebd9c51c2	WARNING	FILE_PATH_CHANGES	arch/x86/include/asm/idtentry.h	709	added, moved or deleted file(s), does MAINTAINERS need updating?
+53aaf262c66ee237e4163f1af347939ebd9c51c2	WARNING	SPACING	arch/x86/include/asm/idtentry.h	50	space prohibited between function name and open parenthesis '('
+53aaf262c66ee237e4163f1af347939ebd9c51c2	ERROR	COMPLEX_MACRO	arch/x86/include/asm/idtentry.h	62	Macros with complex values should be enclosed in parentheses
+53aaf262c66ee237e4163f1af347939ebd9c51c2	ERROR	SPACING	arch/x86/include/asm/idtentry.h	63	spaces required around that '=' (ctx:VxV)
+53aaf262c66ee237e4163f1af347939ebd9c51c2	ERROR	SPACING	arch/x86/include/asm/idtentry.h	63	spaces required around that '=' (ctx:VxV)
+9d06c4027f21fcfa60221bd7203eda3c82568467	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	625	space prohibited before that close parenthesis ')'
+4b6b9111c0b9aa4c3b319f1c5a3b1d5850792167	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	620	space prohibited before that close parenthesis ')'
+58d9c81facf55dbd1836d114ce360a048e3a0582	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	626	space prohibited before that close parenthesis ')'
+49893c5cb281f8691dcbe53e6f85a963f47a4b9b	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	627	space prohibited before that close parenthesis ')'
+866ae2ccee4ac092fea14f18d537205e14c5a904	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	628	space prohibited before that close parenthesis ')'
+f95658fdb575233f79e3e7ed7ecf990389d31319	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	629	space prohibited before that close parenthesis ')'
+aabfe5383ec7b480ca222ac05d49eb3c83dc022a	WARNING	SPACING	arch/x86/include/asm/idtentry.h	95	space prohibited between function name and open parenthesis '('
+aabfe5383ec7b480ca222ac05d49eb3c83dc022a	ERROR	COMPLEX_MACRO	arch/x86/include/asm/idtentry.h	111	Macros with complex values should be enclosed in parentheses
+aabfe5383ec7b480ca222ac05d49eb3c83dc022a	ERROR	SPACING	arch/x86/include/asm/idtentry.h	112	spaces required around that '=' (ctx:VxV)
+aabfe5383ec7b480ca222ac05d49eb3c83dc022a	ERROR	SPACING	arch/x86/include/asm/idtentry.h	112	spaces required around that '=' (ctx:VxV)
+97b3d290b865cf9115f7d37d40b7482efba4d46d	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	630	space prohibited before that close parenthesis ')'
+99a3fb8d01af1085f16a417a748e0a462dc92d29	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	631	space prohibited before that close parenthesis ')'
+fd9689bf91131c4bea5ea54f828af5267f5ed6a0	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	632	space prohibited before that close parenthesis ')'
+be4c11afbb6d5317274e61fda0edf744080fb72b	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	633	space prohibited before that close parenthesis ')'
+dad7106f8194df1b096666c5499ef732497ddb15	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	634	space prohibited before that close parenthesis ')'
+14a8bd2aa7c355b3a8879618a4f70f9c2b0004f7	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	635	space prohibited before that close parenthesis ')'
+436608bb00a59f5457cee26f416067860ca88d9d	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	636	space prohibited before that close parenthesis ')'
+48227e21f7430e31042f63e078a45cd230e9fdfc	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	637	space prohibited before that close parenthesis ')'
+4979fb53ab0ed35eddd20a73c25a5597bc22a57f	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	1120	Duplicate signature
+8edd7e37aed8b9df938a63f0b0259c70569ce3d2	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	619	space prohibited before that close parenthesis ')'
+2c058b03cc06ba485169778a271f87e5ac57dd83	ERROR	COMPLEX_MACRO	arch/x86/include/asm/idtentry.h	189	Macros with complex values should be enclosed in parentheses
+2c058b03cc06ba485169778a271f87e5ac57dd83	ERROR	COMPLEX_MACRO	arch/x86/include/asm/idtentry.h	192	Macros with complex values should be enclosed in parentheses
+8cd501c1facc159dff6db63775151c9200a3ea1e	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	616	space prohibited before that close parenthesis ')'
+9cce81cff748ef0e79b41c6e37d7137267f1212f	ERROR	COMPLEX_MACRO	arch/x86/include/asm/idtentry.h	219	Macros with complex values should be enclosed in parentheses
+9cce81cff748ef0e79b41c6e37d7137267f1212f	ERROR	SPACING	arch/x86/include/asm/idtentry.h	220	spaces required around that '=' (ctx:VxV)
+9cce81cff748ef0e79b41c6e37d7137267f1212f	ERROR	SPACING	arch/x86/include/asm/idtentry.h	220	spaces required around that '=' (ctx:VxV)
+6271fef00b3489690e52ce95edbc378357513547	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	623	space prohibited before that close parenthesis ')'
+2bbc68f8373c0631ebf137f376fbea00e8086be7	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	618	space prohibited before that close parenthesis ')'
+9347f41352181bf4a7e663f7b5f4a4bb32244d73	WARNING	TYPO_SPELLING	COMMIT_MESSAGE	861	'specifc' may be misspelled - perhaps 'specific'?
+865d3a9afe7eddf320e7f61a442864d6efe27505	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	953	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+6a8dfa8e4053adfcf02ee4d96287943064166beb	ERROR	COMPLEX_MACRO	arch/x86/include/asm/idtentry.h	302	Macros with complex values should be enclosed in parentheses
+c29c775a554f7060b6fb31b68f88a3c9087cf1c5	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	619	space prohibited before that close parenthesis ')'
+7102cb07132624cdc09aa8e40c03ae34b4cbb74a	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	331	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+2ab70319bc1f79228da4dce7b9d604740c9beeef	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	88	Duplicate signature
+9f9781b60dfa68d5094a41982f1efa75215a62b1	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	7	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+9ee01e0f69a925b6ff7d5f39441413c55132b167	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	11	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+8a6bc4787f05d087fda8e11ead225c8830250703	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	422	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+931b94145981e411bd2c934657649347ba8a9083	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	3	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+931b94145981e411bd2c934657649347ba8a9083	WARNING	FILE_PATH_CHANGES	arch/x86/include/asm/irq_stack.h	1150	added, moved or deleted file(s), does MAINTAINERS need updating?
+2f6474e4636bcc68af6c44abb2703f12d7f083da	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	235	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+2f6474e4636bcc68af6c44abb2703f12d7f083da	WARNING	FILE_PATH_CHANGES	drivers/xen/preempt.c	6	added, moved or deleted file(s), does MAINTAINERS need updating?
+91eeafea1e4b7c95cc4f38af186d7d48fceef89a	ERROR	SPACING	arch/x86/xen/enlighten_pv.c	629	space prohibited before that close parenthesis ')'
+e2dcb5f1390715244aec12dbd6f294863ca37b88	ERROR	SPACING	arch/x86/include/asm/idtentry.h	301	spaces required around that '=' (ctx:VxV)
+e2dcb5f1390715244aec12dbd6f294863ca37b88	ERROR	SPACING	arch/x86/include/asm/idtentry.h	304	spaces required around that '=' (ctx:VxV)
+e2dcb5f1390715244aec12dbd6f294863ca37b88	ERROR	SPACING	arch/x86/include/asm/idtentry.h	348	spaces required around that '=' (ctx:VxV)
+79b9c183021ef3f5ca2d5168cd3fd442580eca09	WARNING	FILE_PATH_CHANGES	arch/x86/include/asm/irq_regs.h	33	added, moved or deleted file(s), does MAINTAINERS need updating?
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	257	Non-standard signature: Originally-by:
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LONG_LINE	arch/x86/entry/entry_64.S	999	line length of 107 exceeds 100 columns
+633260fa143bbed05e65dc557a492667dfdc45bb	ERROR	SPACING	arch/x86/include/asm/entry_arch.h	38	space required after that ',' (ctx:VxV)
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	366	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	ERROR	SPACING	arch/x86/include/asm/idtentry.h	366	spaces required around that '=' (ctx:VxV)
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	367	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	368	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	SPACING	arch/x86/include/asm/idtentry.h	368	space prohibited between function name and open parenthesis '('
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	375	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	ERROR	SPACING	arch/x86/include/asm/idtentry.h	375	spaces required around that '=' (ctx:VxV)
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	376	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	ERROR	SPACING	arch/x86/include/asm/idtentry.h	376	spaces required around that '=' (ctx:VxV)
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	377	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	383	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	ERROR	SPACING	arch/x86/include/asm/idtentry.h	383	spaces required around that '=' (ctx:VxV)
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	384	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	385	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	SPACING	arch/x86/include/asm/idtentry.h	385	space prohibited between function name and open parenthesis '('
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	392	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	ERROR	SPACING	arch/x86/include/asm/idtentry.h	392	spaces required around that '=' (ctx:VxV)
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	393	please, no spaces at the start of a line
+633260fa143bbed05e65dc557a492667dfdc45bb	ERROR	SPACING	arch/x86/include/asm/idtentry.h	393	spaces required around that '=' (ctx:VxV)
+633260fa143bbed05e65dc557a492667dfdc45bb	WARNING	LEADING_SPACE	arch/x86/include/asm/idtentry.h	394	please, no spaces at the start of a line
+0bf7c314ff68622468945a24ea2f7ebc1edf0a6b	WARNING	TYPO_SPELLING	COMMIT_MESSAGE	357	'seperate' may be misspelled - perhaps 'separate'?
+0bf7c314ff68622468945a24ea2f7ebc1edf0a6b	WARNING	SPACING	arch/x86/include/asm/idtentry.h	204	space prohibited between function name and open parenthesis '('
+0bf7c314ff68622468945a24ea2f7ebc1edf0a6b	ERROR	COMPLEX_MACRO	arch/x86/include/asm/idtentry.h	361	Macros with complex values should be enclosed in parentheses
+6368558c37107bed35950cfbd994f49de07236dc	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	437	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+6368558c37107bed35950cfbd994f49de07236dc	WARNING	SPACING	arch/x86/include/asm/idtentry.h	280	space prohibited between function name and open parenthesis '('
+6368558c37107bed35950cfbd994f49de07236dc	ERROR	COMPLEX_MACRO	arch/x86/include/asm/idtentry.h	440	Macros with complex values should be enclosed in parentheses
+a16be368dd3fb695077cc9bc59c988b548955eec	WARNING	FILE_PATH_CHANGES	arch/x86/include/asm/acrn.h	163	added, moved or deleted file(s), does MAINTAINERS need updating?
+75da04f7f3cb416a68475e040175dc013da32de2	WARNING	FILE_PATH_CHANGES	arch/x86/include/asm/entry_arch.h	818	added, moved or deleted file(s), does MAINTAINERS need updating?
+9628f26baef262a49d877e3785e8b88d241bc064	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	894	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+9628f26baef262a49d877e3785e8b88d241bc064	ERROR	GIT_COMMIT_ID	COMMIT_MESSAGE	894	Please use git commit description style 'commit <12+ chars of sha1> ("<title line>")' - ie: 'commit 5963e317b1e9 ("ftrace/x86: Do not change stacks in DEBUG when calling lockdep")'
+9628f26baef262a49d877e3785e8b88d241bc064	WARNING	BAD_SIGN_OFF	COMMIT_MESSAGE	895	Duplicate signature
+bf2b3008440072068580c609d79a079656af0588	WARNING	LEADING_SPACE	include/linux/irqflags.h	35	please, no spaces at the start of a line
+94438af40d06c110988fc9e30baf801f38b1491a	WARNING	TYPO_SPELLING	arch/x86/kernel/idt.c	264	'intialization' may be misspelled - perhaps 'initialization'?
+3e77abda65b1cec10ef6b18b1ccfee0beaf400f1	WARNING	MISPLACED_INIT	arch/x86/kernel/idt.c	251	__initconst should be placed after early_pf_idts[]
+3e77abda65b1cec10ef6b18b1ccfee0beaf400f1	WARNING	MISPLACED_INIT	arch/x86/kernel/idt.c	259	__initconst should be placed after ist_idts[]
+28eaf87121abfb574fabfb08e21322b4dc377b10	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	85	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+7a745be1cc902d7376fdc29d6b5533eb46532be1	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	159	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+4b281e541bba74bf9574335289484c577f41eaf7	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	255	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+5ef227933117085f1320b3421ef43a26bf624b4c	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	871	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+6eebad1ad303db360ebe3e51c2b9656c3d407157	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	801	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+2823e83a3dc0f54d23db67ca07d74b9c8bb1fdda	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	160	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+f0178fc01fe46bab6a95415f5647d1a74efcad1b	WARNING	PREFER_SECTION	include/linux/interrupt.h	764	__section(.irqentry.text) is preferred over __attribute__((section(".irqentry.text")))
+f0178fc01fe46bab6a95415f5647d1a74efcad1b	WARNING	PREFER_SECTION	include/linux/interrupt.h	767	__section(.softirqentry.text) is preferred over __attribute__((section(".softirqentry.text")))
+7ccddc4613db446dc3cbb69a3763ba60ec651d13	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	354	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+0f5d82f187e1beda3fe7295dfc500af266a5bd80	WARNING	NO_AUTHOR_SIGN_OFF	net/core/filter.c	1782	Missing Signed-off-by: line by nominal patch author 'YiFei Zhu <zhuyifei1999@gmail.com>'
+bd6fecb9a99cceb949271c1821cfbad2b2db97c6	WARNING	FILE_PATH_CHANGES	tools/testing/selftests/bpf/prog_tests/load_bytes_relative.c	10	added, moved or deleted file(s), does MAINTAINERS need updating?
+bd6fecb9a99cceb949271c1821cfbad2b2db97c6	WARNING	NO_AUTHOR_SIGN_OFF	tools/testing/selftests/bpf/progs/load_bytes_relative.c	49	Missing Signed-off-by: line by nominal patch author 'YiFei Zhu <zhuyifei1999@gmail.com>'
+7b53e162f25835f9afb7f0025337319fe5c0dfc1	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css.c	6305	Alignment should match open parenthesis
+7b53e162f25835f9afb7f0025337319fe5c0dfc1	WARNING	BLOCK_COMMENT_STYLE	drivers/staging/media/atomisp/pci/sh_css.c	6320	Block comments should align the * on each line
+7b53e162f25835f9afb7f0025337319fe5c0dfc1	WARNING	BLOCK_COMMENT_STYLE	drivers/staging/media/atomisp/pci/sh_css.c	6328	Block comments use a trailing */ on a separate line
+7b53e162f25835f9afb7f0025337319fe5c0dfc1	WARNING	BLOCK_COMMENT_STYLE	drivers/staging/media/atomisp/pci/sh_css.c	6347	Block comments should align the * on each line
+7b53e162f25835f9afb7f0025337319fe5c0dfc1	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css.c	6357	Alignment should match open parenthesis
+8ef6b8a67b015b4abe74d0488569a47e1f729a9b	WARNING	FILE_PATH_CHANGES	drivers/staging/media/atomisp/include/hmm/hmm_vm.h	58	added, moved or deleted file(s), does MAINTAINERS need updating?
+370f6e5aaa22969db3e96a43e2e718b978a1b5c9	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/atomisp_cmd.c	5793	Alignment should match open parenthesis
+171b7bd66ab85437d377878650d2e4bcef2fee68	ERROR	SPACING	drivers/staging/media/atomisp/pci/atomisp_cmd.c	6018	space required after that ',' (ctx:VxV)
+171b7bd66ab85437d377878650d2e4bcef2fee68	ERROR	SPACING	drivers/staging/media/atomisp/pci/atomisp_cmd.c	6018	spaces prohibited around that '->' (ctx:VxW)
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_cmd.c	683	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_cmd.c	768	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_cmd.c	769	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/atomisp_cmd.c	1924	open brace '{' following function definitions go on the next line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/atomisp_compat.h	257	Alignment should match open parenthesis
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	304	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	309	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	314	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	344	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	348	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	352	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	357	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	361	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	365	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	369	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat.h	373	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/atomisp_compat.h	504	Lines should not end with a '('
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/atomisp_compat.h	512	Lines should not end with a '('
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	219	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	2174	Alignment should match open parenthesis
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3012	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3033	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3042	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3108	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3126	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3145	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3164	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3179	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3191	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3199	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3218	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3233	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	CHECK	ALLOC_SIZEOF_STRUCT	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3910	Prefer vzalloc(sizeof(*tab)...) over vzalloc(sizeof(struct ia_css_ctc_table)...)
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	CHECK	ALLOC_SIZEOF_STRUCT	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	3938	Prefer vzalloc(sizeof(*tab)...) over vzalloc(sizeof(struct ia_css_gamma_table)...)
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	4142	Lines should not end with a '('
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	4159	Lines should not end with a '('
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	4695	Lines should not end with a '('
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	4696	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.h	184	Lines should not end with a '('
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/atomisp_compat_css20.h	185	please, no spaces at the start of a line
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	33	line length of 124 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	34	line length of 124 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	35	line length of 124 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	36	line length of 124 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	37	line length of 130 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	38	line length of 130 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	39	line length of 130 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	40	line length of 130 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	41	line length of 130 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	42	line length of 130 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	43	line length of 130 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	44	line length of 130 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	47	line length of 105 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	48	line length of 101 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	49	line length of 101 exceeds 100 columns
+c01d5546773e3a1587c86cb1fdd6a7b114874e9b	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_subdev.c	52	line length of 113 exceeds 100 columns
+f611797795f2d19e565f38c20516427596a0f27f	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/isp/kernels/ref/ref_1.0/ia_css_ref.host.c	55	please, no spaces at the start of a line
+f611797795f2d19e565f38c20516427596a0f27f	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/isp/kernels/ref/ref_1.0/ia_css_ref.host.h	34	please, no spaces at the start of a line
+f611797795f2d19e565f38c20516427596a0f27f	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/isp/kernels/tnr/tnr_1.0/ia_css_tnr.host.c	98	please, no spaces at the start of a line
+f611797795f2d19e565f38c20516427596a0f27f	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/isp/kernels/tnr/tnr_1.0/ia_css_tnr.host.h	50	please, no spaces at the start of a line
+f611797795f2d19e565f38c20516427596a0f27f	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/runtime/debug/src/ia_css_debug.c	2665	please, no spaces at the start of a line
+d573933c80bd0fe32beb4fba93b965b1fe82411a	WARNING	COMMIT_LOG_LONG_LINE	COMMIT_MESSAGE	226	Possible unwrapped commit description (prefer a maximum 75 chars per line)
+02ab76491bdcfe6f82745ea84d11e58c13827eb7	WARNING	EMBEDDED_FUNCTION_NAME	drivers/staging/media/atomisp/pci/base/refcount/src/refcount.c	49	Prefer using '"%s...", __func__' to using 'refcount_find_entry', this function's name, in a string
+02ab76491bdcfe6f82745ea84d11e58c13827eb7	WARNING	LONG_LINE_STRING	drivers/staging/media/atomisp/pci/css_2401_system/host/csi_rx_private.h	292	line length of 113 exceeds 100 columns
+02ab76491bdcfe6f82745ea84d11e58c13827eb7	WARNING	LONG_LINE_STRING	drivers/staging/media/atomisp/pci/css_2401_system/host/csi_rx_private.h	297	line length of 111 exceeds 100 columns
+02ab76491bdcfe6f82745ea84d11e58c13827eb7	WARNING	EMBEDDED_FUNCTION_NAME	drivers/staging/media/atomisp/pci/sh_css.c	1327	Prefer using '"%s...", __func__' to using 'print_pc_histogram', this function's name, in a string
+02ab76491bdcfe6f82745ea84d11e58c13827eb7	WARNING	LONG_LINE_STRING	drivers/staging/media/atomisp/pci/sh_css.c	5334	line length of 108 exceeds 100 columns
+4fba2916f6a585a4b46cd3216a08c2cd55625e52	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/hive_isp_css_include/memory_access/memory_access.h	143	please, no spaces at the start of a line
+4fba2916f6a585a4b46cd3216a08c2cd55625e52	WARNING	FILE_PATH_CHANGES	drivers/staging/media/atomisp/pci/hrt/hive_isp_css_mm_hrt.c	146	added, moved or deleted file(s), does MAINTAINERS need updating?
+86df6ff2422ae9897c89f1aaf61e00c021239dfe	CHECK	SPACING	drivers/staging/media/atomisp/pci/hive_isp_css_include/memory_access/memory_access.h	84	spaces preferred around that '-' (ctx:VxV)
+86df6ff2422ae9897c89f1aaf61e00c021239dfe	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/runtime/isp_param/src/isp_param.c	130	line length of 107 exceeds 100 columns
+86df6ff2422ae9897c89f1aaf61e00c021239dfe	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	3291	line length of 111 exceeds 100 columns
+86df6ff2422ae9897c89f1aaf61e00c021239dfe	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	3295	line length of 102 exceeds 100 columns
+86df6ff2422ae9897c89f1aaf61e00c021239dfe	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	4545	line length of 107 exceeds 100 columns
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/hive_isp_css_common/host/debug.c	52	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/hive_isp_css_common/host/debug.c	54	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/hive_isp_css_common/host/debug.c	56	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/hive_isp_css_common/host/debug.c	58	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/hive_isp_css_common/host/debug_private.h	105	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/hive_isp_css_common/host/debug_private.h	120	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/hmm/hmm.c	408	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/hmm/hmm.c	435	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	WARNING	EMBEDDED_FUNCTION_NAME	drivers/staging/media/atomisp/pci/hmm/hmm.c	435	Prefer using '"%s...", __func__' to using 'hmm_store', this function's name, in a string
+5472b4db3f093274035c2e8a05c8d5a410224d6a	WARNING	EMBEDDED_FUNCTION_NAME	drivers/staging/media/atomisp/pci/hmm/hmm.c	440	Prefer using '"%s...", __func__' to using 'hmm_store', this function's name, in a string
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/queue/src/queue_access.c	67	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/queue/src/queue_access.c	114	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css.c	4318	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css.c	4490	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css.c	10855	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css.c	10858	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css.c	10874	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css_params.c	1624	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css_params.c	3372	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css_params.c	3415	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css_params.c	4180	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css_params.c	4465	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css_params.c	4476	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css_params.c	4487	Alignment should match open parenthesis
+5472b4db3f093274035c2e8a05c8d5a410224d6a	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css_params.c	4549	Alignment should match open parenthesis
+dc50fa18af5150f488b620aa4f91a11f3704e119	WARNING	TYPO_SPELLING	COMMIT_MESSAGE	46	'uneeded' may be misspelled - perhaps 'unneeded'?
+dc50fa18af5150f488b620aa4f91a11f3704e119	WARNING	FILE_PATH_CHANGES	drivers/staging/media/atomisp/pci/hive_isp_css_include/memory_realloc.h	120	added, moved or deleted file(s), does MAINTAINERS need updating?
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	BLOCK_COMMENT_STYLE	drivers/staging/media/atomisp/pci/base/refcount/src/refcount.c	26	Block comments use a trailing */ on a separate line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/base/refcount/src/refcount.c	41	Alignment should match open parenthesis
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/hive_isp_css_include/host/debug_public.h	90	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/isp/kernels/dvs/dvs_1.0/ia_css_dvs.host.c	278	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/isp/kernels/dvs/dvs_1.0/ia_css_dvs.host.h	58	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/runtime/isp_param/interface/ia_css_isp_param.h	34	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/runtime/isp_param/src/isp_param.c	37	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	1238	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	1612	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	1679	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2710	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2751	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	3435	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	3445	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	3629	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	3649	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	3663	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	4244	Lines should not end with a '['
+100e89894b3b5dbec3a2b69224ef891eb83c822c	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	4248	Lines should not end with a '['
+100e89894b3b5dbec3a2b69224ef891eb83c822c	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	4468	Lines should not end with a '('
+100e89894b3b5dbec3a2b69224ef891eb83c822c	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	4479	Lines should not end with a '('
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	4532	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	4557	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	CHECK	SPACING	drivers/staging/media/atomisp/pci/sh_css_params.c	4561	No space is necessary after a cast
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.h	153	please, no spaces at the start of a line
+100e89894b3b5dbec3a2b69224ef891eb83c822c	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.h	159	please, no spaces at the start of a line
+08fef4fa947ba75cbf59d67c6be75223c6471a88	CHECK	SPACING	drivers/staging/media/atomisp/include/hmm/hmm.h	32	spaces preferred around that '-' (ctx:VxV)
+08fef4fa947ba75cbf59d67c6be75223c6471a88	WARNING	FILE_PATH_CHANGES	drivers/staging/media/atomisp/pci/hive_isp_css_include/memory_access/memory_access.h	27	added, moved or deleted file(s), does MAINTAINERS need updating?
+08fef4fa947ba75cbf59d67c6be75223c6471a88	ERROR	CODE_INDENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	805	code indent should use tabs where possible
+08fef4fa947ba75cbf59d67c6be75223c6471a88	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	805	Alignment should match open parenthesis
+08fef4fa947ba75cbf59d67c6be75223c6471a88	ERROR	CODE_INDENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	806	code indent should use tabs where possible
+08fef4fa947ba75cbf59d67c6be75223c6471a88	ERROR	CODE_INDENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	807	code indent should use tabs where possible
+08fef4fa947ba75cbf59d67c6be75223c6471a88	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/runtime/isp_param/src/isp_param.c	131	line length of 126 exceeds 100 columns
+08fef4fa947ba75cbf59d67c6be75223c6471a88	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/runtime/rmgr/src/rmgr_vbuf.c	300	line length of 105 exceeds 100 columns
+08fef4fa947ba75cbf59d67c6be75223c6471a88	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	3018	line length of 107 exceeds 100 columns
+08fef4fa947ba75cbf59d67c6be75223c6471a88	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	3293	line length of 105 exceeds 100 columns
+08fef4fa947ba75cbf59d67c6be75223c6471a88	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	3364	line length of 104 exceeds 100 columns
+08fef4fa947ba75cbf59d67c6be75223c6471a88	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	4549	line length of 126 exceeds 100 columns
+03884c93560c48c2739caa9b104b0cb4d3ea8c91	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/hmm/hmm.c	269	Alignment should match open parenthesis
+9955d906f28098dfb7be9b5c75006c5f2b431772	CHECK	ALLOC_SIZEOF_STRUCT	drivers/staging/media/atomisp/pci/sh_css_param_dvs.c	33	Prefer kvmalloc(sizeof(*dvs_config)...) over kvmalloc(sizeof(struct ia_css_dvs_6axis_config)...)
+cadcec76ef1f167c628dcc59d6dfca257a56640b	CHECK	ALLOC_SIZEOF_STRUCT	drivers/staging/media/atomisp/pci/sh_css.c	9403	Prefer kzalloc(sizeof(*curr_stream)...) over kzalloc(sizeof(struct ia_css_stream)...)
+1a16d54539785d48db4fa44c16738bfb1c624e6f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/atomisp_csi2.c	388	Alignment should match open parenthesis
+1a16d54539785d48db4fa44c16738bfb1c624e6f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/atomisp_csi2.c	390	Alignment should match open parenthesis
+abbd669dbfbb8c68936b575fe296af3a3184ed3d	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/css_2400_system/hive/ia_css_isp_states.c	213	Lines should not end with a '('
+abbd669dbfbb8c68936b575fe296af3a3184ed3d	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/css_2401_system/hive/ia_css_isp_states.c	213	Lines should not end with a '('
+abbd669dbfbb8c68936b575fe296af3a3184ed3d	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/ia_css_isp_states.h	68	Lines should not end with a '('
+abbd669dbfbb8c68936b575fe296af3a3184ed3d	WARNING	EMBEDDED_FUNCTION_NAME	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	284	Prefer using '"%s...", __func__' to using 'ia_css_frame_allocate_contiguous', this function's name, in a string
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	LOGICAL_CONTINUATIONS	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	440	Logical continuations should be on the previous line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	CONSTANT_COMPARISON	drivers/staging/media/atomisp/pci/atomisp_compat_css20.c	2870	Comparisons should place the constant on the right side of the test
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/pipe/interface/ia_css_pipe_binarydesc.h	65	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/pipe/interface/ia_css_pipe_binarydesc.h	81	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/pipe/interface/ia_css_pipe_binarydesc.h	99	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/pipe/interface/ia_css_pipe_binarydesc.h	292	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/pipe/src/pipe_binarydesc.c	144	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/pipe/src/pipe_binarydesc.c	165	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/pipe/src/pipe_binarydesc.c	206	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/pipe/src/pipe_binarydesc.c	325	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/util/interface/ia_css_util.h	31	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/util/interface/ia_css_util.h	40	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/util/interface/ia_css_util.h	50	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/util/interface/ia_css_util.h	62	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/util/interface/ia_css_util.h	73	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/util/src/util.c	23	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/util/src/util.c	116	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/util/src/util.c	132	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/camera/util/src/util.c	203	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/ia_css_control.h	49	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/ia_css_pipe_public.h	307	please, no spaces at the start of a line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/ia_css_pipe_public.h	377	please, no spaces at the start of a line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/isp/kernels/iterator/iterator_1.0/ia_css_iterator.host.c	40	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/isp/kernels/sdis/sdis_1.0/ia_css_sdis.host.c	238	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/isp/kernels/sdis/sdis_2/ia_css_sdis2.host.c	178	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/isp/kernels/vf/vf_1.0/ia_css_vf.host.c	87	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/isp/kernels/vf/vf_1.0/ia_css_vf.host.c	120	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	ENOTSUPP	drivers/staging/media/atomisp/pci/runtime/binary/src/binary.c	731	ENOTSUPP is not a SUSV4 error code, prefer EOPNOTSUPP
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/runtime/binary/src/binary.c	789	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/runtime/binary/src/binary.c	885	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/runtime/binary/src/binary.c	910	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/runtime/binary/src/binary.c	943	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	BRACES	drivers/staging/media/atomisp/pci/runtime/binary/src/binary.c	1121	braces {} are not necessary for single statement blocks
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/runtime/binary/src/binary.c	1378	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/interface/ia_css_bufq.h	83	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/interface/ia_css_bufq.h	97	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/interface/ia_css_bufq.h	111	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/interface/ia_css_bufq.h	125	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/interface/ia_css_bufq.h	137	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/interface/ia_css_bufq.h	148	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/interface/ia_css_bufq.h	158	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/src/bufq.c	332	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/src/bufq.c	362	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/src/bufq.c	392	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/src/bufq.c	417	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/src/bufq.c	439	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/bufq/src/bufq.c	489	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/frame/interface/ia_css_frame.h	117	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	75	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	105	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	123	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	154	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	202	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	244	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	275	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	297	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	533	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	814	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/runtime/frame/src/frame.c	935	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/ifmtr/interface/ia_css_ifmtr.h	31	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/ifmtr/src/ifmtr.c	31	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/ifmtr/src/ifmtr.c	36	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/ifmtr/src/ifmtr.c	75	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/ifmtr/src/ifmtr.c	499	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/ifmtr/src/ifmtr.c	525	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/runtime/isp_param/src/isp_param.c	104	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/isys/interface/ia_css_isys.h	54	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/isys/interface/ia_css_isys.h	69	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/isys/interface/ia_css_isys.h	73	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/isys/interface/ia_css_isys.h	110	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/isys/src/csi_rx_rmgr.c	129	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/isys/src/csi_rx_rmgr.c	149	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/isys/src/rx.c	219	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/isys/src/rx.c	382	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/pipeline/interface/ia_css_pipeline.h	103	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/pipeline/interface/ia_css_pipeline.h	162	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/pipeline/interface/ia_css_pipeline.h	184	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/pipeline/interface/ia_css_pipeline.h	221	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/pipeline/src/pipeline.c	49	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/pipeline/src/pipeline.c	64	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/pipeline/src/pipeline.c	273	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/pipeline/src/pipeline.c	355	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/pipeline/src/pipeline.c	412	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/pipeline/src/pipeline.c	570	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/runtime/rmgr/interface/ia_css_rmgr_vbuf.h	55	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/spctrl/interface/ia_css_spctrl.h	42	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/runtime/spctrl/src/spctrl.c	40	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/runtime/timer/src/timer.c	21	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css.c	250	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	258	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	277	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	462	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	537	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	1054	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	1229	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css.c	1231	please, no spaces at the start of a line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	1269	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	1275	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	1408	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	1628	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	1660	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	1857	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	1886	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	1959	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	2070	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	2235	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	2295	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	2342	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	2413	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	2549	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	2621	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	2690	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	2726	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	2848	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	2855	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	3043	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	3076	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	3128	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	3183	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	3242	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	3321	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	3486	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	3527	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	3761	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	3804	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	3973	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	4109	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	4377	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	4628	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	4633	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	4784	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	4831	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	5059	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	5070	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	5083	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	BRACES	drivers/staging/media/atomisp/pci/sh_css.c	5155	braces {} are not necessary for single statement blocks
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	5297	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	5369	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	5429	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	5773	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	5904	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	5935	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css.c	6044	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	6067	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	6341	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	6427	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	6427	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	6544	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	6544	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	6573	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	6573	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	6711	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	6711	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	6779	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	6860	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	6860	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	6980	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	6980	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	7155	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	7355	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	7428	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	7467	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	BLOCK_COMMENT_STYLE	drivers/staging/media/atomisp/pci/sh_css.c	7502	Block comments use a trailing */ on a separate line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	7509	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	7757	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	7809	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	7853	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8208	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	8229	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8229	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8298	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8444	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8486	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8550	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8583	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css.c	8584	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css.c	8622	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8622	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8811	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8833	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	BRACES	drivers/staging/media/atomisp/pci/sh_css.c	8865	braces {} are not necessary for single statement blocks
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	8876	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	9048	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	9086	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	9131	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	9191	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	9248	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	BRACES	drivers/staging/media/atomisp/pci/sh_css.c	9559	braces {} are not necessary for single statement blocks
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	9787	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	9911	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	9928	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/sh_css.c	9943	line length of 115 exceeds 100 columns
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	ENOTSUPP	drivers/staging/media/atomisp/pci/sh_css.c	9971	ENOTSUPP is not a SUSV4 error code, prefer EOPNOTSUPP
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	9975	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10033	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10092	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10120	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10201	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10364	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10407	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10472	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10623	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10647	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10680	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10729	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10851	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css.c	10898	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	BRACES	drivers/staging/media/atomisp/pci/sh_css.c	10968	braces {} are not necessary for single statement blocks
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_firmware.c	78	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_firmware.c	101	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_firmware.c	209	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_mipi.c	37	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_mipi.c	100	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_mipi.c	249	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_mipi.c	285	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_mipi.c	408	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_mipi.c	569	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_mipi.c	683	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	1352	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	1432	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	1458	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	CONSTANT_COMPARISON	drivers/staging/media/atomisp/pci/sh_css_params.c	1458	Comparisons should place the constant on the right side of the test
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	1474	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	1678	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	1719	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	1968	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2121	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2433	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2440	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2463	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2486	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2515	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2589	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2715	please, no spaces at the start of a line
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2758	please, no spaces at the start of a line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2900	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	2971	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	3255	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/sh_css_params.c	3335	Alignment should match open parenthesis
+41022d35ddf219361f33b59034cc67430a6a590f	WARNING	ENOTSUPP	drivers/staging/media/atomisp/pci/sh_css_params.c	3356	ENOTSUPP is not a SUSV4 error code, prefer EOPNOTSUPP
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	3760	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	4501	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/sh_css_params.c	4541	Lines should not end with a '('
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_params.c	4566	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_sp.c	539	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_sp.c	569	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_sp.c	611	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_sp.c	740	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	CHECK	SPACING	drivers/staging/media/atomisp/pci/sh_css_sp.c	759	No space is necessary after a cast
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	TRAILING_STATEMENTS	drivers/staging/media/atomisp/pci/sh_css_sp.c	759	trailing statements should be on next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_sp.c	794	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_sp.c	1604	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_sp.c	1643	open brace '{' following function definitions go on the next line
+41022d35ddf219361f33b59034cc67430a6a590f	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/sh_css_version.c	21	open brace '{' following function definitions go on the next line
+a86b4936ba6827e7c1b658d522412e5a78c03242	WARNING	FILE_PATH_CHANGES	drivers/staging/media/atomisp/pci/hive_isp_css_include/error_support.h	25	added, moved or deleted file(s), does MAINTAINERS need updating?
+a86b4936ba6827e7c1b658d522412e5a78c03242	CHECK	BRACES	drivers/staging/media/atomisp/pci/runtime/bufq/src/bufq.c	393	Blank lines aren't necessary after an open brace '{'
+a86b4936ba6827e7c1b658d522412e5a78c03242	WARNING	LEADING_SPACE	drivers/staging/media/atomisp/pci/runtime/bufq/src/bufq.c	394	please, no spaces at the start of a line
+a86b4936ba6827e7c1b658d522412e5a78c03242	WARNING	ENOSYS	drivers/staging/media/atomisp/pci/runtime/eventq/src/eventq.c	53	ENOSYS means 'invalid syscall nr' and nothing else
+a86b4936ba6827e7c1b658d522412e5a78c03242	WARNING	ENOTSUPP	drivers/staging/media/atomisp/pci/runtime/queue/src/queue_access.c	72	ENOTSUPP is not a SUSV4 error code, prefer EOPNOTSUPP
+a86b4936ba6827e7c1b658d522412e5a78c03242	WARNING	ENOTSUPP	drivers/staging/media/atomisp/pci/runtime/queue/src/queue_access.c	119	ENOTSUPP is not a SUSV4 error code, prefer EOPNOTSUPP
+a86b4936ba6827e7c1b658d522412e5a78c03242	WARNING	ENOTSUPP	drivers/staging/media/atomisp/pci/runtime/queue/src/queue_access.c	146	ENOTSUPP is not a SUSV4 error code, prefer EOPNOTSUPP
+a86b4936ba6827e7c1b658d522412e5a78c03242	WARNING	ENOTSUPP	drivers/staging/media/atomisp/pci/runtime/queue/src/queue_access.c	173	ENOTSUPP is not a SUSV4 error code, prefer EOPNOTSUPP
+85b606e02ad7b9c6a168b4a4a86177d384fc76e8	CHECK	LINE_SPACING	drivers/staging/media/atomisp/pci/atomisp_cmd.c	1268	Please don't use multiple blank lines
+85b606e02ad7b9c6a168b4a4a86177d384fc76e8	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/atomisp_cmd.c	4602	Alignment should match open parenthesis
+85b606e02ad7b9c6a168b4a4a86177d384fc76e8	WARNING	LONG_LINE	drivers/staging/media/atomisp/pci/atomisp_cmd.c	5298	line length of 138 exceeds 100 columns
+85b606e02ad7b9c6a168b4a4a86177d384fc76e8	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/atomisp_cmd.c	5449	Alignment should match open parenthesis
+85b606e02ad7b9c6a168b4a4a86177d384fc76e8	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/atomisp_ioctl.c	1204	Alignment should match open parenthesis
+f90e73ce803c5b0444e347e4f667369de2a4b427	WARNING	FILE_PATH_CHANGES	drivers/staging/media/atomisp/pci/hive_isp_css_include/system_types.h	21	added, moved or deleted file(s), does MAINTAINERS need updating?
+4556cbcf80c9b40130b69968155c49ecefcebbc0	ERROR	OPEN_BRACE	drivers/staging/media/atomisp/pci/runtime/binary/src/binary.c	1379	open brace '{' following function definitions go on the next line
+4556cbcf80c9b40130b69968155c49ecefcebbc0	CHECK	LINE_SPACING	drivers/staging/media/atomisp/pci/runtime/binary/src/binary.c	1805	Please don't use multiple blank lines
+84f1b2dc0c47b11aff3de1af237e8377e8bb7898	ERROR	GIT_COMMIT_ID	COMMIT_MESSAGE	950	Please use git commit description style 'commit <12+ chars of sha1> ("<title line>")' - ie: 'commit a1dfb4c48cc1 ("media: v4l2-compat-ioctl32.c: refactor compat ioctl32 logic")'
+84f1b2dc0c47b11aff3de1af237e8377e8bb7898	CHECK	MACRO_ARG_REUSE	drivers/staging/media/atomisp/pci/atomisp_compat_ioctl32.c	29	Macro argument reuse 'from' - possible side-effects?
+84f1b2dc0c47b11aff3de1af237e8377e8bb7898	CHECK	MACRO_ARG_PRECEDENCE	drivers/staging/media/atomisp/pci/atomisp_compat_ioctl32.c	29	Macro argument 'from' may be better as '(from)' to avoid precedence issues
+84f1b2dc0c47b11aff3de1af237e8377e8bb7898	CHECK	LINE_SPACING	drivers/staging/media/atomisp/pci/atomisp_compat_ioctl32.c	36	Please don't use multiple blank lines
+84f1b2dc0c47b11aff3de1af237e8377e8bb7898	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/atomisp_compat_ioctl32.c	66	Alignment should match open parenthesis
+84f1b2dc0c47b11aff3de1af237e8377e8bb7898	CHECK	PARENTHESIS_ALIGNMENT	drivers/staging/media/atomisp/pci/atomisp_compat_ioctl32.c	314	Alignment should match open parenthesis
+84f1b2dc0c47b11aff3de1af237e8377e8bb7898	WARNING	SUSPECT_CODE_INDENT	drivers/staging/media/atomisp/pci/atomisp_compat_ioctl32.c	384	suspect code indent for conditional statements (8, 24)
+84f1b2dc0c47b11aff3de1af237e8377e8bb7898	WARNING	SUSPECT_CODE_INDENT	drivers/staging/media/atomisp/pci/atomisp_compat_ioctl32.c	407	suspect code indent for conditional statements (8, 24)
+84f1b2dc0c47b11aff3de1af237e8377e8bb7898	WARNING	LINE_SPACING	drivers/staging/media/atomisp/pci/atomisp_compat_ioctl32.c	721	Missing a blank line after declarations
+84f1b2dc0c47b11aff3de1af237e8377e8bb7898	CHECK	OPEN_ENDED_LINE	drivers/staging/media/atomisp/pci/atomisp_compat_ioctl32.c	860	Lines should not end with a '('
